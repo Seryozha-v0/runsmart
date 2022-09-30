@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
     <link href="css/font.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
     <link href="css/style.min.css" rel="stylesheet">
     <title>RunSmart</title>
 </head>
 
 <body>
-    <div class="promo">
+    <section class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -52,9 +53,12 @@
                     или
                     <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
                 </div>
-            </div> <!--.promo__wrapper - END-->
-        </div> <!--.container - END-->
-    </div> <!--.promo - END-->
+            </div>
+            <!--.promo__wrapper - END-->
+        </div>
+        <!--.container - END-->
+    </section>
+    <!--.promo - END-->
 
     <section class="advantages">
         <div class="container">
@@ -64,21 +68,68 @@
                 <div class="advantages__item">
                     <img src="icons/advantages/cup_icon.svg" alt="cup" class="advantages__icon">
                     <div class="advantages__subtitle">Делимся опытом</div>
-                    <div class="advantages__descr">Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
+                    <div class="advantages__descr">Наши сотрудники всегда готовы поделиться своим опытом,<br>
+                        так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
+                    </div>
                 </div>
                 <div class="advantages__item">
                     <img src="icons/advantages/heart_icon.svg" alt="heart" class="advantages__icon">
                     <div class="advantages__subtitle">Заботимся о здоровье</div>
-                    <div class="advantages__descr">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
+                    <div class="advantages__descr">Мы работаем для того,<br>
+                        чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
+                    </div>
                 </div>
                 <div class="advantages__item">
                     <img src="icons/advantages/shoe_icon.svg" alt="shoe" class="advantages__icon">
                     <div class="advantages__subtitle">Учим бегать</div>
-                    <div class="advantages__descr">Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - <span>I LOVE RUNNING</span>.</div>
+                    <div class="advantages__descr">Помогаем с обучением<br>
+                        правильной технике бега!<br>
+                        Дружим с крупнейшей школой бега в России - <span>I LOVE RUNNING</span>.</div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="consultation">
+        <div class="container">
+            <h2 class="sec-title sec-title_left">Получите бесплатную консультацию<br>
+                по подбору пульсометра
+            </h2>
+            <div class="consultation__descr">
+                Просто заполните форму заявки<br>
+                и мы перезвоним вам в течении 10 минут
+            </div>
+
+            <form class="feed-form" action="#">
+                <input name="name" type="text" required placeholder="Ваше имя">
+                <input name="phone" type="tel" required placeholder="Ваш телефон">
+                <input name="email" type="email" required placeholder="Ваш E-mail">
+
+                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel__inner">
+                <div>
+                    <img src="img/slider/slide_1.jpg" alt="1">
+                </div>
+                <div>
+                    <img src="img/slider/slide_2.jpg" alt="2">
+                </div>
+                <div>
+                    <img src="img/slider/slide_3.jpg" alt="3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

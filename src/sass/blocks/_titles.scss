@@ -4,4 +4,12 @@
     line-height: 34px;
     text-align: center;
     color: $title_color;
+    text-transform: uppercase;
+
+    &_left {
+        font-size: 36px;
+        line-height: 38px;
+        color: #FFFFFF;
+        text-align: left;
+    }
 }
