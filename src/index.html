@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
     <link href="css/font.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/tiny-slider.css">
     <link href="css/style.min.css" rel="stylesheet">
     <title>RunSmart</title>
 </head>
@@ -113,22 +113,22 @@
     <section class="carousel">
         <div class="container">
             <div class="carousel__inner">
-                <div>
+                <div class="carousel__slide">
                     <img src="img/slider/slide_1.jpg" alt="1">
                 </div>
-                <div>
+                <div class="carousel__slide">
                     <img src="img/slider/slide_2.jpg" alt="2">
                 </div>
-                <div>
+                <div class="carousel__slide">
                     <img src="img/slider/slide_3.jpg" alt="3">
                 </div>
             </div>
+            <button type="button" class="carousel__controls carousel_prev"><img src="icons/left.png"></button>
+            <button type="button" class="carousel__controls carousel_next"><img src="icons/right.png"></button>
         </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
     <script src="js/script.js"></script>
 </body>
 

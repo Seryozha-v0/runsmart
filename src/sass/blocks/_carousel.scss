@@ -7,7 +7,17 @@
         margin: 0 auto;
     }
 
-    .slick-prev, .slick-next {
+    .container {
+        position: relative;
+    }
+
+    &__slide img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    &_prev, &_next {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -21,8 +31,27 @@
         }
     }
     
-    .slick-next {
+    &_next {
         left: auto;
         right: -66px;
+    }
+
+    .tns-nav {
+        text-align: center;
+    }
+
+    .tns-nav button {
+        width: 8px;
+        height: 8px;
+        margin-right: 5px;
+        padding: 0;
+        border: none;
+        border-radius: 100%;
+        background-color: $title_color;
+        transition: all .25s;
+    }
+
+    .tns-nav .tns-nav-active {
+        background-color: $second_color;
     }
 }
