@@ -2,6 +2,16 @@
     .container {
         max-width: 860px;
     }
+
+    .catalog {
+        &-item {
+            width: calc(100% / 3 - 10px);
+
+            &__price {
+                font-size: 16px;
+            }
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -62,6 +72,16 @@
             display: none;
         }
     }
+
+    .catalog {
+        &-item {
+            width: calc(100% / 2 - 10px);
+
+            &__price {
+                font-size: 20px;
+            }
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -79,6 +99,7 @@
             width: 50%;
             margin-top: 12px;
         }
+
         &__contacts {
             order: 2;
             width: 50%;
@@ -103,7 +124,35 @@
             width: 325px;
         }
     }
-    
+
+    .catalog {
+        &__tab {
+            font-size: 16px;
+        }
+
+        &-item {
+            width: calc(100% / 2 - 10px);
+
+            &__prices {
+                flex-shrink: 0;
+                padding-right: 5px;
+            }
+
+            &__price {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .reviews {
+        &-item {
+            &__img {
+                width: 139px;
+                height: 139px;
+                margin-right: 30px;
+            }
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -122,6 +171,7 @@
             width: auto;
             margin-top: 12px;
         }
+
         &__contacts {
             order: 3;
             width: 250px;
@@ -129,6 +179,7 @@
             margin-top: 12px;
         }
     }
+
     .promo {
         &__header {
             font-size: 30px;
@@ -181,5 +232,50 @@
 
     .feed-form {
         width: 100%;
+    }
+
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+            margin-top: 40px;
+        }
+        &__tab {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        &-item {
+            width: calc(100% - 10px);
+
+            &__prices {
+                flex-shrink: 0;
+                padding-right: 5px;
+            }
+
+            &__price {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .reviews {
+        &-item {
+            flex-direction: column;
+            align-items: center;
+
+            &__img {
+                width: 139px;
+                height: 139px;
+                margin-right: 0;
+            }
+
+            &__wrapper {
+                padding: 25px 0 0;
+            }
+
+            &__client, &__marathons {
+                text-align: center;
+            }
+        }
     }
 }
