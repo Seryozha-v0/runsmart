@@ -1,4 +1,5 @@
 @font-face {
+    font-display: swap;
     font-family: "MuseoModerno";
     src: url(../fonts/MuseoModerno-Regular.woff2) format('woff2');
     src: url(../fonts/MuseoModerno-Regular.ttf) format('truetype');
@@ -7,6 +8,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: "MuseoModerno";
     src: url(../fonts/MuseoModerno-Medium.woff2) format('woff2');
     src: url(../fonts/MuseoModerno-Medium.ttf) format('truetype');
@@ -15,6 +17,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: "MuseoModerno";
     src: url(../fonts/MuseoModerno-Bold.woff2) format('woff2');
     src: url(../fonts/MuseoModerno-Bold.ttf) format('truetype');
